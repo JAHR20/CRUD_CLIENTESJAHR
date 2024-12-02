@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Iniciar sesión</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'clientes/style.css' %}">
+    </head>
+    <body>
+        <h2 class="form-title">Iniciar sesión</h2>
+        <form method="post" class="form-login-register">
+            {% csrf_token %}
+            {{ form.as_p}}
+            <button type ="submit"> Iniciar sesión</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista de Clientes</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'clientes/style.css' %}">
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                {% if user.is_authenticated %}
+                    <a href="{% url 'logout' %}">Cerrar Sesión</a>
+                {% else %}
+                    <a href="{% url 'login' %}">Iniciar Sesión</a>
+                {% endif %}
+            </div>
+        </header>
+        <div class="container">
+            <h1>Lista de Clientes</h1>
+            <form class="search" method="get">
+                <input type="text" name="q" placeholder="Buscar cliente...">
+                <button type="submit">Buscar</button>
+            </form>
+            <table class="clientes-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Telefono</th>
+                        <th>Fecha de nacimiento</th>
+                        {% if user.is_authenticated %}
+                        <th colspan="2">opciones</th>
+                        {% endif %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for cliente in clientesjahr %}
+                    <tr>
+                        <td>{{cliente.nombre}}</td>
+                        <td>{{cliente.apellidos}}</td>
+                        <td>{{cliente.telefono}}</td>
+                        <td>{{cliente.fecha_nac}}</td>
+                        {% if user.is_authenticated %}
+                        <td><a href="{% url 'update_cliente' cliente.pk %}">Editar</a></td>
+                        <td><a href="{% url 'delete_cliente' cliente.pk %}">Eliminar</a></td>
+                        {% endif %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+           <a class="btn" href="{% url 'create_cliente' %}">Agregar cliente</a>
+           
+           <a class="btn" href="{% url 'generar_pdf_cliente' %}?q={{ request.GET.q }}" target="_blank">Generar PDF</a>
+        </div>
+    </body>
+</html>

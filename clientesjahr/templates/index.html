@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width", initial-scale="1">
+
+        <title> Design JAHR</title>
+        {% load static %}
+        <!-- Enlace a archivo css-->
+        <link rel="stylesheet" type="text/css" href="{% static 'clientes/css/style.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'clientes/css/boxicons.min.css' %}">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        
+        <header>
+            <a class="logo" href="#">Design <span>JAHR</span></a>
+            <ul class="navbar">
+                <li><a href="#home">About me</a></li>
+                <li><a href="#info">My Skills</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+
+            <div class="h-derecha">
+                <a href="#">Sígueme</a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                <div class='bx bx-menu' id="menu-icon"></div>
+            </div>
+        </header>
+
+        <section id="home" class="home-JAHR">
+
+            <div class="home-text-JAHR">
+                <h5 id="typed">Proyectos</h5>
+                <h1>Hecha un vistazo</h1>
+                <p>Contamos con varios años de experiencia en el desarollo de software</br>
+                    como Sitios web, Aplicaciones moviles, entre otros pregunte sin 
+                    compromiso
+                </p>
+                <a href="#" id="btn-pedido" class="btn">Contactame</a>
+            </div>
+
+        </section>
+
+        <!-- sección con columnas -->
+        <section id="info" class="columnas-jahr">
+            <div data-aos="zoom-in" class="col-content-jahr">
+                <div class="row">
+                    <div class="row-img">
+                        <img src="{% static 'clientes/img/java.jpg' %}" alt="imagen de java">
+                    </div>
+                    <h4>Proyectos Java</h4>
+                </div>
+                <div class="row">
+                    <div class="row-img">
+                        <img src="{% static 'clientes/img/python.jpg' %}" alt="imagen de python">
+                    </div>
+                    <h4>Proyectos Python</h4>
+                </div>
+                <div class="row">
+                    <div class="row-img">
+                        <img src="{% static 'clientes/img/php.jpg' %}" alt="imagen de php">
+                    </div>
+                    <h4>Proyectos Php</h4>
+                </div>
+                <div class="row">
+                    <div class="row-img">
+                        <img src="{% static 'clientes/img/c++.jpg' %}" alt="imagen de c++">
+                    </div>
+                    <h4>Proyectos C++</h4>
+                </div>
+                <div class="row">
+                    <div class="row-img">
+                        <img src="{% static 'clientes/img/csharp.jpg' %}" alt="imagen de csharp">
+                    </div>
+                    <h4>Proyectos C#</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="col-content2-jahr">
+            <div class="col-content2-jahr">
+                <div class="row">
+                    <div data-aos="fade-right" class="row-img-j">
+                        <img src="{% static 'clientes/img/react.jpg' %}" alt="imagen de react">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row-img-j">
+                        <h4>Lo nuevo</h4>
+                        <h2>Aprovecha</h2>
+                        <br>
+                        <p>Asesoramiento profesional y soporte por 1 año</p>
+                        <a href="#" id="btn-promocion" class="btn">Obtener</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="footer-Jahr">
+                <div class="row">
+                    <div class="row-img-footer">
+                        <img src="{% static 'clientes/img/img-footer.jpg' %}" alt="imagen de react">
+                    </div>
+                </div>
+                <div class="row">
+                    <h5 >Atención a clientes</h5>
+                    <div class="row-a">
+                        <a href="#"><i class='bx bxl-whatsapp-square'></i> 2386729108</a>
+                        <br/>
+                        <a href="#"><i class='bx bxl-facebook-square'></i> Jahrdesign</a>
+                        <br/>
+                        <a href="#"><i class='bx bxl-gmail'></i> 2000Jahrdesign@gmail.com</a>
+                        <br/>
+                        <a href="#"><li class='bx bxs-phone'> 2381672729</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <h5>Productos</h5>
+                    <div class="row-a">
+                        <a href="#"><i class='bx bxs-circle'></i>Sitio web</a>
+                        <br/>
+                        <a href="#"><i class='bx bxs-circle'></i>Aplicación Movil</a>
+                        <br/>
+                        <a href="#"><i class='bx bxs-circle'></i>Aplicación de escritorio</a>
+                        <br/>
+                        <a href="#"><i class='bx bxs-circle'></i>Aplicaciones hibridas</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <h5>Recursos</h5>
+                    <div class="row-a">
+                        <a href="#"><i class='bx bxs-circle'></i>Documentos</a>
+                        <br/>
+                        <a href="#"><i class='bx bxs-circle'></i>Soporte</a>
+                        <br/>
+                        <a href="#"><i class='bx bxs-circle'></i>Info</a>
+                        <br/>
+                        <a href="#"><i class='bx bxs-circle'></i>Politica y privacidad</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="{% static 'clientes/js/script.js' %}"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+</html>
