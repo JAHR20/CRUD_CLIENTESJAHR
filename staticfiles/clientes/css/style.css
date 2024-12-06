@@ -75,6 +75,7 @@ span{
     margin: 15px 20px;
     padding: 10px;
     font-size: var(--p-font);
+    font-weight: bold;
 }
 
 div a{
