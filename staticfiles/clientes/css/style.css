@@ -13,7 +13,7 @@
     --text-color: #ffffff;
     --bg-color: #000000;
     --main-color: #a90a0a;
-    --bar-texticon:#062183;
+    --bar-texticon:#950b0b;
     --p-font: 1rem;
     --h2-font: 3rem;
     --h1-font: 6rem;
@@ -96,6 +96,7 @@ div a{
     color: var(--text-color);
     font-size: var(--p-font);
     margin-right: 20px;
+    font-weight: bold;
 }
 
 .h-derecha a{
@@ -105,6 +106,7 @@ div a{
     margin-right: 18px;
     margin-left: 5px;
     transition: 0.5s ease all;
+    font-weight: bold;
 }
 
 .h-derecha a:hover{
