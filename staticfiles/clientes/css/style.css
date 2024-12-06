@@ -13,6 +13,7 @@
     --text-color: #ffffff;
     --bg-color: #000000;
     --main-color: #a90a0a;
+    --bar-texticon:#062183;
     --p-font: 1rem;
     --h2-font: 3rem;
     --h1-font: 6rem;
@@ -81,7 +82,7 @@ div a{
 }
 
 .navbar a:hover{
-    color:var(--main-color);
+    color:var(--bar-texticon);
     border-bottom: 2px solid var(--text-color);
 }
 
@@ -106,7 +107,7 @@ div a{
 }
 
 .h-derecha a:hover{
-    color: var(--bg-color);
+    color: var(--bar-texticon);
     transform: translateY(-3px);
 }
 
