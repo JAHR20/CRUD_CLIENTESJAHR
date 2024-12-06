@@ -81,7 +81,7 @@ div a{
 }
 
 .navbar a:hover{
-    color:var(--bg-color);
+    color:var(--main-color);
     border-bottom: 2px solid var(--text-color);
 }
 
